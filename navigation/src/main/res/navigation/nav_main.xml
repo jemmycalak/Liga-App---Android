@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/listLigaFragment">
+
+    <fragment
+        android:id="@+id/listLigaFragment"
+        android:name="com.jemmycalak.liga.fragment.ListLigaFragment">
+        <action
+            android:id="@+id/listLigaFragment_to_detailLigaFragmet"
+            app:destination="@+id/detailLigaFragment">
+            <argument
+                android:name="data"
+                app:argType="com.jemmycalak.model.Country"/>
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailLigaFragment"
+        android:name="com.jemmycalak.liga.fragment.DetailLigaFragment">
+        <argument
+            android:name="data"
+            app:argType="com.jemmycalak.model.Country"/>
+    </fragment>
+</navigation>

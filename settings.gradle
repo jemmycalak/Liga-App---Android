@@ -1,0 +1,8 @@
+include ':common'
+include ':navigation'
+include ':data:repository'
+include ':data:remote'
+include ':data:model'
+include ':features:liga'
+include ':app'
+rootProject.name = "Liga App"
